@@ -32,8 +32,6 @@ end
 
 node.set['ossec']['agent_server_ip'] = ossec_server.first
 
-include_recipe 'ossec::install_agent'
-
 dbag_name = node['ossec']['data_bag']['name']
 dbag_item = node['ossec']['data_bag']['ssh']
 ossec_key = if node['ossec']['data_bag']['encrypted']

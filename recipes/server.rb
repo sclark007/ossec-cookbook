@@ -17,8 +17,6 @@
 # limitations under the License.
 #
 
-include_recipe 'ossec::install_server'
-
 ssh_hosts = []
 
 search_string = 'ossec:[* TO *]'
